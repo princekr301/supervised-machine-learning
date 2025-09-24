@@ -1,0 +1,50 @@
+
+What is Gradient Descent ?
+
+Gradient Descent is an **optimization algorithm** used in Machine Learning and Deep Learning to minimize the error (or cost) of a model.
+
+* The goal of training a model is to find the **best parameters (weights & biases)** that make predictions as accurate as possible.
+* Gradient Descent helps us do this by **iteratively updating the parameters** in the direction that reduces the error.
+
+
+
+### **How it Works (Step by Step):**
+
+1. **Start with random values** for the model parameters.
+
+2. **Calculate the cost function** (a measure of error, like Mean Squared Error).
+
+3. **Find the gradient** (the slope or derivative of the cost function with respect to parameters).
+
+   * Gradient tells us the direction of steepest increase.
+
+4. **Update parameters** in the opposite direction of the gradient (because we want to minimize error).
+
+   * Formula:
+
+   $$
+   \theta = \theta - \alpha \cdot \nabla J(\theta)
+   $$
+
+   Where:
+
+   * $\theta$ = parameter (weight/bias)
+   * $\alpha$ = learning rate (step size)
+   * $\nabla J(\theta)$ = gradient of the cost function
+
+5. **Repeat steps 2–4** until the cost function is minimized (or close enough).
+
+---
+
+### **Intuition (Simple Example):**
+
+Imagine you are standing on top of a hill (high error). You want to reach the bottom of the valley (minimum error).
+
+* Gradient tells you the steepest direction downhill.
+* Learning rate decides how big each step should be.
+* By taking steps downhill, you eventually reach the lowest point (optimal solution).
+
+---
+
+👉 In short: **Gradient Descent is like walking down a hill step by step to find the lowest point (minimum error) in machine learning.**
+

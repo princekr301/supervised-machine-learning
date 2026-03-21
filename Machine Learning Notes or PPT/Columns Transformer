@@ -1,0 +1,72 @@
+**ColumnTransformer** is a concept from scikit-learn used in machine learning for **data preprocessing**.
+
+---
+
+# 🔷 Simple Explanation
+
+👉 **ColumnTransformer = A tool that applies different operations to different columns of your dataset.**
+
+---
+
+# 🔷 Why we use it?
+
+In any dataset:
+
+* Some columns are **numbers** (Age, Salary)
+* Some are **text** (Gender, City)
+
+👉 But machine learning models need **only numbers**
+
+So we must:
+
+* **Scale numeric data**
+* **Convert text data into numbers**
+
+👉 ColumnTransformer helps do this **in one step**
+
+---
+
+# 🔷 Easy Example
+
+Suppose you have:
+
+| Age | Salary | Gender |
+| --- | ------ | ------ |
+| 25  | 30000  | Male   |
+
+Now:
+
+* Age, Salary → apply **scaling**
+* Gender → apply **encoding**
+
+👉 ColumnTransformer will:
+✔ Apply scaling to numeric columns
+✔ Apply encoding to categorical columns
+✔ Combine everything into one final dataset
+
+---
+
+# 🔷 What it does (in 3 steps)
+
+1. Select columns
+2. Apply different transformations
+3. Combine results
+
+---
+
+# 🔷 One-Line Definition
+
+👉 **ColumnTransformer is used to preprocess different columns in different ways and combine them into a single dataset for machine learning.**
+
+---
+
+# 🔷 Key Benefit
+
+✅ Makes preprocessing easy
+✅ Saves time
+✅ Keeps code clean
+✅ Reduces mistakes
+
+---
+
+If you want, I can give you a **2-mark, 5-mark, or interview answer format** 👍
